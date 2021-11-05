@@ -1,5 +1,5 @@
 import styles from './Main.module.css'
-import {Route} from "react-router-dom";
+import {Redirect, Route} from "react-router-dom";
 import {Home} from "./Home/Home";
 import {Skills} from "./Skills/Skills";
 import {Projects} from "./Projects/Projects";
@@ -12,6 +12,7 @@ export const Main = () => {
         <Route path='/skills' render={() => <Skills name="Skills" />} />
         <Route path='/projects' render={() => <Projects name="Projects" />} />
         <Route path='/contacts' render={() => <Contacts name="Contacts" />} />
+        <Redirect from='/' to='/home' />
       </div>
 
   )
