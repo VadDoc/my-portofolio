@@ -1,4 +1,4 @@
-import styles from "../Skills.module.css";
+import styles from "./Skill.module.css";
 
 export const Skill = ({skill}) => {
   return <div className={styles.skill}>
